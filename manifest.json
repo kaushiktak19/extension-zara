@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Zara Product Info Extractor",
+    "version": "1.0",
+    "description": "Extracts product information from Zara product pages.",
+    "permissions": ["activeTab", "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.zara.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
